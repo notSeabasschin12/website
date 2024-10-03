@@ -1,7 +1,11 @@
+import * as React from 'react';
+        
 function Projects() {
     return (
-        <div className="projects"></div>
+        <div>
+            <h4>Text</h4>
+        </div>
     );
-};
+}   
 
 export default Projects;

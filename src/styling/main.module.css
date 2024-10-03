@@ -1,0 +1,77 @@
+.mainbody {
+  height: 180vh;
+  font-size: calc(10px + 2vmin);
+  background-color: rgb(255, 255, 255);
+}
+
+.mainheader {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  background-color: rgb(104, 132, 158);
+}
+
+.mainNavigationLinks {
+  width: 33vw;
+  height: 10vh;
+  padding-top: 2.5vh;
+  padding-left: 2.5vw;
+}
+
+.mainNavigationLinks a{
+  color: white;
+  font-size: calc(6px + 2vh);
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 2vw;
+  text-decoration: none;
+}
+
+.mainNavigationLinks a:hover {
+  color: rgb(112, 112, 112);
+}
+
+.personalLinks {
+  position: absolute;
+  right: 0;
+}
+
+.introPicture {
+  width: 100vw;
+  opacity: 0.75;
+  filter: grayscale(60%);
+}
+
+.reactLogo {
+  height: 4vmin;
+  padding-top: 1vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reactLogo {
+    animation: react-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mainFooter {
+  background-color: rgb(220, 232, 232);
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerReactText {
+  padding-top: 2vh;
+  color: rgb(130, 127, 127);
+  font: 'Open Sans', sans-serif;
+  padding-bottom: 1vh;
+}
