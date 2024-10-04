@@ -1,7 +1,7 @@
 import * as React from 'react';
 import logo from '../icons/logo.svg';
 import mountains from '../icons/mountains.png';
-import profile from '../icons/profile.jpg';
+import profile from '../icons/profile.png';
 import styles from '../styling/main.module.css';
 
         
@@ -21,8 +21,13 @@ function Home() {
                 {/* <Email/> */}
                 {/* </div> */}
             {/* </div> */}
-
-
+                <div className={styles.profileTextContainer}>
+                    <div className={styles.textContainer}>
+                        <text className={styles.profileTextTop}>Sebastian</text>
+                        <text className={styles.profileTextBot}>Guo</text>
+                    </div>
+                    <img src={profile} className={styles.profilePicture} alt="profile" />
+                </div>           
                 <img src={mountains} className={styles.introPicture} alt="background"/>
             </div>
             <footer className={styles.mainFooter}>

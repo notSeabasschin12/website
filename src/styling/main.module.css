@@ -35,8 +35,49 @@
   right: 0;
 }
 
+.profileTextContainer {
+  position: relative;
+  display: flex;
+}
+
+.textContainer {
+  position: relative;
+  width: 50%;
+  padding: 1vw;
+
+}
+
+.profileTextTop {
+  position: relative;
+  font-family: Gill Sans;
+  top: 46.5%; 
+  left: 26vw; 
+  color: #3f7a4b;
+  font-size: 7vh; 
+  font-weight: bold;
+}
+
+.profileTextBot {
+  position: relative;
+  font-family: Gill Sans;
+  top: 53.5%; 
+  left: 21vw; 
+  color: #3f7a4b;
+  font-size: 7vh; 
+  font-weight: bold;
+}
+
+.profilePicture {
+  width: 50vw;
+  height: 60%;
+  padding: 1vw;
+  opacity: 0.9;
+  filter: grayscale(100%)
+}
+
 .introPicture {
-  width: 100vw;
+  padding-top: 5vh;
+  width: 100%;
   opacity: 0.75;
   filter: grayscale(60%);
 }
@@ -62,7 +103,7 @@
 }
 
 .mainFooter {
-  background-color: rgb(220, 232, 232);
+  background-color: #93c4c5;
   height: 12vh;
   display: flex;
   flex-direction: column;
