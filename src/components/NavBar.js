@@ -9,6 +9,7 @@ import Home from "../pages/home.js"
 import Blog from "../pages/blog.js"
 import Projects from "../pages/projects.js"
 import styled from 'styled-components'
+import turtle from '../icons/turtle_1f422.gif';
 
 const RouterDiv = styled.div`
     width: 100%;
@@ -24,7 +25,7 @@ const linkStyle = {
     "font-size": "2.5vh",
     "float": "right",
     "color": "gray"
-};
+}
 
 export default function NavBar() {
     return (

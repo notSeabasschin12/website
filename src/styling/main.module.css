@@ -1,5 +1,5 @@
 .mainbody {
-  height: 180vh;
+  height: auto;
   font-size: calc(10px + 2vmin);
   background-color: rgb(255, 255, 255);
 }
@@ -27,7 +27,7 @@
 }
 
 .mainNavigationLinks a:hover {
-  color: rgb(112, 112, 112);
+  color: rgb(206, 206, 206);
 }
 
 .personalLinks {
@@ -44,27 +44,44 @@
   position: relative;
   width: 50%;
   padding: 1vw;
+  animation: fadeIn 5s;
+}
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .profileTextTop {
+  justify-content: left;
+  width: 100%;
   position: relative;
   font-family: Gill Sans;
-  top: 46.5%; 
-  left: 26vw; 
+  top: 39%; 
+  /* left: 25vw;  */
   color: #3f7a4b;
-  font-size: 7vh; 
+  font-size: 9vh; 
   font-weight: bold;
 }
 
 .profileTextBot {
   position: relative;
   font-family: Gill Sans;
-  top: 53.5%; 
-  left: 21vw; 
+  top: 45%; 
   color: #3f7a4b;
-  font-size: 7vh; 
+  font-size: 9vh; 
   font-weight: bold;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .profileTurtle {
+    animation: react-logo-spin infinite 20s linear;
+    width: 6vw;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+  }
 }
 
 .profilePicture {
@@ -75,11 +92,42 @@
   filter: grayscale(100%)
 }
 
+.introductionTextContainer {
+  position: relative;
+  display: flex;
+}
+
 .introPicture {
-  padding-top: 5vh;
-  width: 100%;
+  padding: 1vw;
+  width: 47vw;
+  height: auto;
   opacity: 0.75;
   filter: grayscale(60%);
+}
+
+.introBox {
+  padding: 1vw;
+  margin-top: 1vh;
+  width: 52vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.introTextTitle {
+  width: 100%;
+  font-family: Gill Sans;
+  font-size: 4vh; 
+  color:rgb(80, 114, 146);
+}
+
+.introText {
+  line-height: 2.5vh;
+  padding-top: 1vh;
+  width: 100%;
+  font-family: Gill Sans;
+  font-size: 2vh; 
+  color:rgb(80, 114, 146);
 }
 
 .reactLogo {
